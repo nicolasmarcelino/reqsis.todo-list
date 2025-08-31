@@ -28,8 +28,14 @@ btnAdd.addEventListener('click', () => {
   const btnRemover = document.createElement('button');
   btnRemover.textContent = 'Delete';
   btnRemover.addEventListener('click', () => {
-    lista.removeChild(li);
-    msgErro.textContent = ''; // limpa mensagem se houver
+    const confirmed = confirm("Confirmar exclusão da tarefa?");
+    if (confirmed) {
+      lista.removeChild(li);
+      msgErro.textContent = ''; // limpa mensagem se houver
+    } else {
+      confirmed = null
+      return;
+    }
   });
 
   li.appendChild(btnRemover);
