@@ -43,3 +43,10 @@ btnAdd.addEventListener('click', () => {
 
   input.value = '';
 });
+
+input.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter') {
+    event.preventDefault(); // evita comportamento padrão de submit em forms
+    btnAdd.click();
+  }
+});
