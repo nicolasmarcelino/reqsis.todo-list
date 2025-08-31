@@ -1,77 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Todo List</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        max-width: 440px;
-        margin: 40px auto;
-        padding: 0 20px;
-        background: #2e0854; /* roxo escuro */
-        color: #eee; /* texto claro para contraste */
-      }
-      input[type="text"] {
-        width: 65%;
-        padding: 8px;
-        font-size: 16px;
-        border: inset;
-        border-radius: 4px;
-        background: #000; /* preto */
-        color: #eee;
-      }
-      input[type="text"]::placeholder {
-        color: #bbb;
-      }
-      button {
-        padding: 8px 12px;
-        font-size: 14px;
-        cursor: pointer;
-        margin-left: 5px;
-        border: inset;
-        border-radius: 4px;
-        background: #06000a;
-        color: #eee;
-        transition: background 0.3s;
-      }
-      button:hover {
-        background: #5c00a3;
-      }
-      ul {
-        list-style-type: none;
-        padding-left: 0;
-      }
-      li {
-        background: #000; /* preto */
-        margin: 8px 0;
-        padding: 10px;
-        border-radius: 4px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        color: #eee;
-      }
-      .error {
-        color: #ff4d4d; /* vermelho claro pra erro */
-        margin-top: 10px;
-      }
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css">
+  <title>Todo List</title>
 </head>
+
 <body>
 
-<h2>Minha Todo List</h2>
+  <h2>Minha Todo List</h2>
 
-<input type="text" id="novaTarefa" placeholder="Digite uma tarefa" />
-<button id="btnAdd">Adicionar</button>
+  <input type="text" id="novaTarefa" placeholder="Digite uma tarefa" />
+  <button id="btnAdd">Adicionar</button>
 
-<p class="error" id="msgErro"></p>
+  <p class="error" id="msgErro"></p>
 
-<ul id="listaTarefas"></ul>
+  <ul id="listaTarefas"></ul>
 
-<script src ="script.js">
-</script>
+  <script src="script.js">
+  </script>
 
 </body>
+
 </html>
