@@ -1,4 +1,5 @@
 # reqsis.todo-list
 
 Colaboradores:
-- github.com/rafaelira1
+- @rafaelira1
+- @GabrielEloi
